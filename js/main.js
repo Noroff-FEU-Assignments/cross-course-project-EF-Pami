@@ -1,15 +1,14 @@
-async function product() {
-    const url ="https://api.noroff.dev/api/v1/square-eyes";
-    const response = await fetch(url);
-    const result = await response.json();
-    return result;
-    
-    
-}
+const url = "https://api.noroff.dev/api/v1/square-eyes";
+const resultcontainer = document.querySelector(".movies");
 
-product() .then(result=> console.log(result));
+console.log(url);
 
-function rendersingledata({id,title,description}) {
+
+
+
+
+
+/*function rendersingledata({id,title,description}) {
     const anchorTag = document.createElement('a');
     anchorTag.classList.add('card');
     anchorTag.href= `./products.html?=${id}`;
@@ -31,4 +30,4 @@ async function renderHTml(){
     });
 }
 
-renderHTml
+renderHTml*/
